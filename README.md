@@ -41,18 +41,18 @@ Always validate your scripts before applying them in production environments. Sc
 - You test on a staging environment first.
 
 ---
-
 ## 🤝 Contributing
 
 Feel free to submit issues or open pull requests with improvements, new automation use cases, or bug fixes.
 
 ### **Repository Structure**  
 ```
-📂 odoo-bom-cleanup/  
-├── README.md  
-├── odoo_crm_to_tickets.py  
-├── remove_duplicate_products.py  
-└── combined_cleanup_action.py  
+📂 Odoo_Automations_Python/  
+├── README.md
+├── Odoo_Survey_to_CRM.py  
+├── Odoo_Event_to_Calender.py
+├── Odoo_Survey_to_Contact.py  
+└── Survey to Tickets with Email and Priority.py  
 ```  
 
 ### **License**  
