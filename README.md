@@ -46,8 +46,21 @@ Always validate your scripts before applying them in production environments. Sc
 
 Feel free to submit issues or open pull requests with improvements, new automation use cases, or bug fixes.
 
----
+### **Repository Structure**  
+```
+📂 odoo-bom-cleanup/  
+├── README.md  
+├── odoo_crm_to_tickets.py  
+├── remove_duplicate_products.py  
+└── combined_cleanup_action.py  
+```  
 
-## 📜 License
+### **License**  
+MIT License – Free to use and modify.  
 
-This project is open-source under the **MIT License**. Use it freely, and contribute back to make it better!
+---  
+**Contribute or Report Issues**  
+Feel free to fork, improve, or suggest enhancements!  
+
+
+**Powered by Hsx TECH** – *Collaborate, Lead, Innovate* 
