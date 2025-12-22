@@ -52,6 +52,7 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ├── Odoo_Survey_to_CRM.py  
 ├── Odoo_Event_to_Calender.py
 ├── Odoo_Survey_to_Contact.py  
+├── Product_Price_Sync.py
 └── Survey to Tickets with Email and Priority.py  
 ```  
 
