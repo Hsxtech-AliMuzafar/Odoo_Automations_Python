@@ -19,6 +19,35 @@ These scripts are designed to be executed directly within Odoo’s **“Automate
 - 📊 Ensure data consistency across models
 - ⚙️ Lightweight and plug-and-play
 
+---
+
+## 📜 Scripts
+
+### **Stock_Quant_User_Validation.py**
+Restricts specific users from adding new product lines in the Stock Quant (Inventory Adjustment) window. Only whitelisted users can add or modify products.
+
+### **Sales_Order_Assign_Current_User.py**
+Automatically assigns the current user to the "Sales Person" field when creating or updating sales orders.
+
+### **Invoice_Auto_Confirm_PIDistribution.py**
+Automatically confirms invoices created in the company "PI Distribution SRL" (ID = 12).
+
+### **Odoo_Survey_to_CRM.py**
+Converts survey responses into CRM leads with customizable field mappings.
+
+### **Odoo_Event_to_Calender.py**
+Syncs Odoo events to external calendar systems.
+
+### **Odoo_Survey_to_Contact.py**
+Creates or updates contacts based on survey responses.
+
+### **Product_Price_Sync.py**
+Synchronizes product prices across multiple companies or pricelists.
+
+### **Survey to Tickets with Email and Priority.py**
+Converts survey responses into helpdesk tickets with email notifications and priority assignment.
+
+---
 
 🚀 Usage
 
@@ -53,6 +82,9 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ├── Odoo_Event_to_Calender.py
 ├── Odoo_Survey_to_Contact.py  
 ├── Product_Price_Sync.py
+├── Stock_Quant_User_Validation.py
+├── Sales_Order_Assign_Current_User.py
+├── Invoice_Auto_Confirm_PIDistribution.py
 └── Survey to Tickets with Email and Priority.py  
 ```  
 
