@@ -44,8 +44,14 @@ Creates or updates contacts based on survey responses.
 ### **Product_Price_Sync.py**
 Synchronizes product prices across multiple companies or pricelists.
 
+### **Product_Default_Code_Lock.py**
+Prevents editing of the Internal Reference (default_code) field after product creation. Raises a validation error if anyone attempts to modify it, ensuring product codes remain consistent.
+
 ### **Survey to Tickets with Email and Priority.py**
 Converts survey responses into helpdesk tickets with email notifications and priority assignment.
+
+### **Product_Reference_Validation.py**
+Ensures that Product Internal References (`default_code`) are unique across the `product.template` model, preventing data entry conflicts.
 
 ---
 
@@ -82,6 +88,8 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ├── Odoo_Event_to_Calender.py
 ├── Odoo_Survey_to_Contact.py  
 ├── Product_Price_Sync.py
+├── Product_Default_Code_Lock.py
+├── Product_Reference_Validation.py
 ├── Stock_Quant_User_Validation.py
 ├── Sales_Order_Assign_Current_User.py
 ├── Invoice_Auto_Confirm_PIDistribution.py
