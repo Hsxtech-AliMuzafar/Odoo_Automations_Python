@@ -50,8 +50,11 @@ Prevents editing of the Internal Reference (default_code) field after product cr
 ### **Survey to Tickets with Email and Priority.py**
 Converts survey responses into helpdesk tickets with email notifications and priority assignment.
 
-### **Product_Reference_Validation.py**
-Ensures that Product Internal References (`default_code`) are unique across the `product.template` model, preventing data entry conflicts.
+### **Product_Barcode_Validation.py**
+Prevents duplicate barcodes in the `product.template.barcode` model by checking against both `product.template` (barcode and default_code) and other barcode lines. Ensures cross-model uniqueness.
+
+### **Product_Template_Validation.py**
+Validates uniqueness of both `barcode` and `default_code` (Internal Reference) fields in `product.template` by cross-checking with `product.template.barcode` records. Prevents conflicts across all product identifiers.
 
 ---
 
@@ -89,7 +92,8 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ├── Odoo_Survey_to_Contact.py  
 ├── Product_Price_Sync.py
 ├── Product_Default_Code_Lock.py
-├── Product_Reference_Validation.py
+├── Product_Barcode_Validation.py
+├── Product_Template_Validation.py
 ├── Stock_Quant_User_Validation.py
 ├── Sales_Order_Assign_Current_User.py
 ├── Invoice_Auto_Confirm_PIDistribution.py
