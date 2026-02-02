@@ -23,6 +23,16 @@ These scripts are designed to be executed directly within Odoo’s **“Automate
 
 ## 📜 Scripts
 
+### **Create_Projects_from_crm.py**
+Automatically converts CRM Opportunities into structured Projects. Feature-rich and optimized for Odoo 19, including:
+- **Activity Automation**: Creates a "To-Do" activity for the Project Manager.
+- **Smart Mapping**: Transfers Customer, Tags, and Description.
+- **Odoo 19 UI**: Features sticky success notifications with an "Open Project" button and robust internal links.
+- **Duplicate Prevention**: Prevents creating multiple projects for the same Lead.
+
+### **Move_CRM_Stage_on_Quote_Sent.py**
+Automates the sales-to-lead workflow by moving an Opportunity to the **"Quote Issued"** stage as soon as a related quotation is sent to the customer. includes clickable links in the chatter for easy navigation.
+
 ### **Stock_Quant_User_Validation.py**
 Restricts specific users from adding new product lines in the Stock Quant (Inventory Adjustment) window. Only whitelisted users can add or modify products.
 
@@ -87,6 +97,8 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ```
 📂 Odoo_Automations_Python/  
 ├── README.md
+├── Create_Projects_from_crm.py
+├── Move_CRM_Stage_on_Quote_Sent.py
 ├── Odoo_Survey_to_CRM.py  
 ├── Odoo_Event_to_Calender.py
 ├── Odoo_Survey_to_Contact.py  
