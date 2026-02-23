@@ -59,6 +59,9 @@ try:
 
                 project = template.copy(copy_vals)
                 project.write({'is_template': False, 'active': True})
+                
+                # Link project back to lead (NEW)
+                record.write({'x_studio_linked': project.id})
 
                 # 5. Generate Modern Links (Full URL is best for Odoo 19)
                 base_url = record.get_base_url()
