@@ -66,6 +66,17 @@ Prevents duplicate barcodes in the `product.template.barcode` model by checking 
 ### **Product_Template_Validation.py**
 Validates uniqueness of both `barcode` and `default_code` (Internal Reference) fields in `product.template` by cross-checking with `product.template.barcode` records. Prevents conflicts across all product identifiers.
 
+### **CRM_Stage_Update_on_Project_Done.py**
+Automatically moves a CRM Opportunity to the **"Job Complete"** stage when its related Project is moved to the **"Done"** stage. Uses the `x_studio_linked` field to identify the connection and includes downgrade prevention to ensure stages only move forward.
+
+### **Purchase_Order_Team_Assignment.py**
+Automatically assigns a specific Purchase Representative to a Purchase Order upon creation based on the creator's Sales Team. Mapping:
+- Commercial (4) -> Rohan (9)
+- CCS (5) -> Chintan (8)
+- SWEP (15) -> Nagi (30)
+- ITES OPEN Mkt Bid (16, 17, 19) -> Ben (32)
+
+
 ---
 
 🚀 Usage
@@ -109,6 +120,8 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ├── Stock_Quant_User_Validation.py
 ├── Sales_Order_Assign_Current_User.py
 ├── Invoice_Auto_Confirm_PIDistribution.py
+├── CRM_Stage_Update_on_Project_Done.py
+├── Purchase_Order_Team_Assignment.py
 └── Survey to Tickets with Email and Priority.py  
 ```  
 
