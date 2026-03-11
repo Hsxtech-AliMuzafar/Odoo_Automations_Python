@@ -14,11 +14,11 @@ if record:
             # 3. Check if it is an Invoice or Bill
             if record.move_type in ['out_invoice', 'out_refund', 'in_invoice', 'in_refund']:
                 
-                # 4. Tax logic: Remove for specific product or apply based on partner
+                # 4. Tax logic: Remove specific product or apply taxes based on partner
                 for line in record.invoice_line_ids:
                     if line.product_id.id == 19954:
-                        # Remove all taxes for product ID 19954
-                        line.write({'tax_ids': [(5, 0, 0)]})
+                        # Remove product ID 19954 line
+                        line.unlink()
                     elif record.partner_id.id in [6598, 15]:
                         # Using .write() to avoid 'forbidden opcode: STORE_ATTR'
                         line.write({'tax_ids': [(4, 312)]})
