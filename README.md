@@ -76,6 +76,9 @@ Automatically assigns a specific Purchase Representative to a Purchase Order upo
 - SWEP (15) -> Nagi (30)
 - ITES OPEN Mkt Bid (16, 17, 19) -> Ben (32)
 
+### **Product_Tax_Assignment_on_Creation.py**
+Automatically adds a specific Sales Tax (ID: 302) to new or updated products if they belong to Company ID: 12. Uses SQL bypass to handle Odoo multi-company "top-secret records" permission errors and sandbox environment limitations.
+
 
 ---
 
@@ -122,6 +125,7 @@ Feel free to submit issues or open pull requests with improvements, new automati
 ├── Invoice_Auto_Confirm_PIDistribution.py
 ├── CRM_Stage_Update_on_Project_Done.py
 ├── Purchase_Order_Team_Assignment.py
+├── Product_Tax_Assignment_on_Creation.py
 └── Survey to Tickets with Email and Priority.py  
 ```  
 
